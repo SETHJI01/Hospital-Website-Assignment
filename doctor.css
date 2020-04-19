@@ -1,0 +1,66 @@
+<style>
+  #topdiv
+  {
+      width:100%;
+      height:auto;
+      background-color: lightslategray;
+  }
+  #topdiv : hover
+  {
+      border:solid 1px black;
+  }
+  .marq1
+  {
+     color:green;
+     font-weight:bold;
+     border:1px lightslategray solid;
+     padding-left=10px;
+     padding-right=10px;
+     margin-left=20px;
+  }
+  .gallery
+  {
+      margin-top:10px;
+      height: 300px;
+      width:100%;
+      background-color:lemonchiffon;
+  }
+  #main1
+  {
+      float:left;
+      padding-top:10px;
+      padding-right:10px;
+      padding-left:10px;
+      transition: transform 0.5s;
+  }
+  #main1:hover
+  {
+      transform: rotate(360deg);
+  }
+  .gallery:hover
+  { 
+      border:1px solid black ;
+  }
+  .details
+  {
+      float:left;
+      width:auto;
+      height:inherit;
+      padding-left:20px ;
+      padding-right:20px;
+  }
+  .contact
+  {
+      float:left;
+       width:auto;
+       padding-right:20px;
+       padding-left:10px;
+  }
+  #phone1
+  {
+     margin-top=10px;
+     display:none;
+     clear: both;;
+     border-top: 1px solid black;
+  }
+</style>

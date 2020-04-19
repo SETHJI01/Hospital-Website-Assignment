@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta name="description" content="Simple form">
+        <meta name="Author" content="Arpit Seth">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="../css/appoint.css">
+    </head>
+    <body>
+        <img id="imag" title="SETH-Hospital" src="../images/logo2.png" alt="Logo of hospial">
+        <div class="container">
+            <h1>Appointment details : </h1><br>
+            <form action="appointment.html" method="get">
+                <label name="fname">First Name</label><br>
+                <input type="text" placeholder="Your First Name" required><br>
+                <label name="lname">Last Name</label><br>
+                <input type="text" placeholder="Your Last Name" ><br>
+                <label name="age">Age</label><br>
+                <input type="number" placeholder="Your Age"required><br>
+                <label name="Appointment Date">Appointment Date :</label><br>
+                <input type="date" id="dat" required><br>
+                <label name="Address">Address</label><br>
+                <input type="text"><br>
+                <label for="gender">Gender</label><br>
+                <select id="select" required>
+                    <option value="NULL">--Select Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="department">Department</label><br>
+                <select id="select" required>
+                    <option value="NULL">--Select Department--</option>
+                    <option value="Gyneology">Gynecology</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Orthopadic">Orthopadic</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="pyschology">Pyschology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="Cancer">Cancer</option>
+                </select><br><br>
+                <input type="submit" value="Submit"></submit>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

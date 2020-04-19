@@ -1,0 +1,67 @@
+<DOCTYPE html>
+<html>
+   <head>
+     <title>
+      doctor details
+    </title>
+   <link rel=stylesheet type="text/css" href="doctor.css">
+   
+   </head>
+<body>
+    <div class="div1" id="topdiv">
+        <marquee class="marq1">
+             <strong>note:-</strong>if patient want to be cure than then 
+             god will help you in healing you fastly. so be positive 
+        </marquee>
+    </div>
+   <div class="gallery">
+       <div >
+        <img src="doctor1.jpg" alt="image of the doctor" id="main1">  
+       </div> 
+      <div class="details">
+          <p>
+          <a href="#"> Dr.Anjali chaudary</a><br>
+           MBBS,MD-obstetrics &gynaecology,DNB-obstertrics &
+           genocology<br>
+           23 years experience overall<br>
+           Obstetrician, infertlity Specilist, gynaecologist,
+           </p>
+      </div>   
+      <div class="contact">
+          <br>
+         FEE:-700;<br>
+         <strong>
+             Mon-tue,
+             thu-fri
+         </strong>
+         <br>
+         time:-6:00-7:00 pm<br>
+         <button id="phone" onclick="s1()">Contact hospital </button>
+      </div>
+      <div id="phone1">
+         <p> Phone number</p>
+          <h2 style=color:green>
+            01161266300
+          </h2>
+         <p> By calling this number, you agree to the Terms & Conditions .If you could not connect
+            with the center, please write to support@practo.com</p>
+      </div>
+   </div> 
+   <script lang="javascript">
+     var x=document.getElementById("phone1");
+      
+    function s1()
+    {
+      if(x.style.display=="block")
+      {
+        x.style.display="none";
+        document.getElementById("phone").innerHTML="Contact Hospital";
+      }
+      else
+      {
+        x.style.display="block";
+        document.getElementById("phone").innerHTML="Hide Contact";
+      }
+    }
+  </script>
+</body>        

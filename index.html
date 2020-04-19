@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="unofficial page of Seth Hospital">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SETH Hospital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="div1">
+  <img id="t" title="SETH-Hospital" src="images/logo2.png" alt="A logo of avengers">
+</div>
+<div>
+  <ul>
+    <li><a href="#">Home</a></li>
+      <li class="drp">
+          <a href="#">Head Doctors</a>
+          <div class="drpdwn">
+              <a href="#">Dr. Preksha (Gynecology)</a>
+              <a href="#">Dr. Arpit Seth(Cardiology)</a>
+              <a href="#">Dr. Raghav Agarwal(Orthopadic)</a>
+              <a href="#">Dr. Manvi Jain(ICU)</a>
+              <a href="#">Dr. Rahul Bali(Pyschologist)</a>
+              <a href="#">Dr. Yash Natani(Neurology)</a>
+              <a href="#">Dr. Renu Balhara(Cancer)</a>
+              </div>
+      </li>
+        <li class="drp">
+                <a href="#">Department</a>
+                <div class="drpdwn">
+                    <a href="#">Gynecology</a>
+                    <a href="#">Cardiology</a>
+                    <a href="#">Orthopadic</a>
+                    <a href="#">ICU</a>
+                    <a href="#">Pyschology</a>
+                    <a href="#">Neurology</a>
+                    <a href="#">Cancer</a>
+            </div>
+      </li>
+          <li><a href="#">About us</a></li>
+            <li><a href="#">Query</a></li>
+            <li style="float:right;"><a href="otherpages/appoint.html">Appointment</a></li>
+    </ul>
+      </div><br>
+      <div id="slider">
+        <div id="box">
+          <img id="simg" src="images/s1.jpg">
+        </div>
+        <!-- buttons for controls slider -->
+        <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
+        <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+      </div>
+      <div class="pa" style="text-align:center;"><br>
+        <h1 style="font-size:40px; font-weight:bold;">Our Vision</h1>
+        <p>Our vision is to achieve excellence in Healthcare services by offering unique expertise, state of the art technology & patient care Metro Group of Hospitals is committed in providing world class health care at an affordable cost, irrespective of the education background, caste, creed or social status of the patient<p>
+          <p>Our immediate agenda is to set up more such dedicated centers for providing wholesome treatment to the patients from all over the country and abroad. We are committed in continually serving the humanity at every needful hour with our state of the art facilities and world's best professionals. We are motivated by the immense faith that our patients have kept in us, we will stand by our principles and policies and will pursue the same with full dedication in future as well.</p>
+      </div>
+      <div>
+        <img id="map1" src="images/hospital.png">
+      </div>
+      <div class="container1">
+        <h1 style="font-size: 48px;">Here is Our social media links</h1>
+        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+        <a target="_blank" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
+        <a target="_blank" href="https://github.com/"><i class="fa fa-github" style="font-size:48px;"></i></a>
+        <a target="_blank" href="https://in.linkedin.com/"><i class="fa fa-linkedin" style="font-size:48px;"></i></a>
+      </div>
+      <script>
+        var slider_content = document.getElementById('simg');
+          // contain images in an array
+          var image = ['images/s1','images/s2', 'images/s3', 'images/s4','images/s5'];
+          var i = image.length;
+          // function for next slide 
+          function nextImage(){
+            if (i<image.length) {
+              i= i+1;
+            }else{
+              i = 1;
+            }
+              slider_content.src = image[i-1]+".jpg";
+          }
+          // function for prew slide
+          function prewImage(){
+            if (i<image.length+1 && i>1) {
+              i= i-1;
+            }else{
+              i = image.length;
+            }
+              slider_content.src = image[i+1]+".jpg";
+          }
+        // script for auto image slider
+        setInterval(nextImage , 2000);
+      </script>
+  </body>
+</html>

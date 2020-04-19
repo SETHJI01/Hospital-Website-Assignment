@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Thanks
+    </title>
+    <style>
+        body{
+            text-align:center;
+            background-image:url("../images/w1.png");
+            background-size:cover;
+        }
+        img{
+          margin:auto;
+          margin-top:20px;
+          height:200px;
+          width:200px;
+        }
+        #content{
+            margin-top:40px;
+            font-family: cursive;
+            color :red;
+            background-color: #202040;
+            opacity:0.75;
+            padding: 10px 30px 40px 30px;
+            font-size: 20px;
+            font-weight: bolder;
+            height: 300px;
+            width:60%;
+            position:relative;
+            left:50%;
+            margin-left:-30%;
+            border-radius:15px;
+            box-shadow: 8px 8px 5px black;
+        }
+    </style>
+</head>
+<body>
+  <div id="img">
+      <img src="../images/logo2.png"  alt="SETH HOSPITAL">
+  </div>
+   <div id="content">
+    <h1>Your appointment has been booked you can come <br>at Your Selected Date </h1>
+    <h1 id="p1"></h1>
+    </div>
+    <script>
+function pad(number) { 
+  return ((number<10)?"0":"")+number.toString();
+}
+
+function randomTime() {
+  var r = Math.floor(Math.random() * 1440);
+  var HH = pad(1 + (Math.floor(r/60) % 12));
+  var MM = pad(r % 60);
+  var AMPM = (r>=720) ? "PM" : "AM";
+
+  return HH + ":" + MM + " " + AMPM;
+}
+
+document.getElementById("p1").innerHTML=randomTime();
+</script>
+</body>
+</html>
